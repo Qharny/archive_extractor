@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:archive_extractor/src/extrators/rar_extractor.dart';
 import 'package:test/test.dart';
-import 'package:archive_extractor/archive_extractor.dart';
+// import 'package:archive_extractor/archive_extractor.dart';
 import 'package:path/path.dart' as path;
 
 void main() {
@@ -28,7 +28,7 @@ void main() {
     if (whichProcess.exitCode == 0) {
       // Mocking the absence of unrar is difficult in this test environment
       // So we'll skip if it's actually installed
-      skip('unrar is installed, cannot test the absence of it');
+      // skip('unrar is installed, cannot test the absence of it');
     }
     
     // Create an extractor
@@ -49,7 +49,7 @@ void main() {
     // Skip test if unrar is not installed
     final whichProcess = await Process.run('which', ['unrar']);
     if (whichProcess.exitCode != 0) {
-      skip('unrar is not installed, skipping test');
+      // skip('unrar is not installed, skipping test');
     }
     
     // Create an extractor

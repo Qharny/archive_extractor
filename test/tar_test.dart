@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:archive_extractor/src/extrators/tar_extractor.dart';
 import 'package:test/test.dart';
 import 'package:archive/archive.dart';
-import 'package:archive_extractor/archive_extractor.dart';
+// import 'package:archive_extractor/archive_extractor.dart';
 import 'package:path/path.dart' as path;
 
 void main() {
@@ -122,5 +122,5 @@ Future<void> _createTestTarGzFile(String tarGzPath) async {
   final gzData = GZipEncoder().encode(tarData);
   
   // Write to disk
-  await File(tarGzPath).writeAsBytes(gzData!);
+  await File(tarGzPath).writeAsBytes(gzData);
 }

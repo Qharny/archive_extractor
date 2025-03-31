@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:archive_extractor/src/models/extration_result.dart';
-import 'package:path/path.dart' as path;
+// import 'package:path/path.dart' as path;
 
 import 'base_extractor.dart';
 

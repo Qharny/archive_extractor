@@ -1,4 +1,4 @@
-library archive_extractor;
+library;
 
 export 'src/utils/file_utils.dart';
 
